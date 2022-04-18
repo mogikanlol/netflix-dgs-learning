@@ -1,0 +1,4 @@
+rootProject.name = 'netflix-dgs-learning'
+
+include 'client',
+        'server'

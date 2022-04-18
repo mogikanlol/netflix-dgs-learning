@@ -1,0 +1,11 @@
+server:
+  port: 8080
+
+spring:
+  jpa:
+    show-sql: true
+    # https://stackoverflow.com/questions/67744719/spring-boot-data-jpa-with-h2-and-data-sql-table-not-found
+    defer-datasource-initialization: true
+    properties:
+      hibernate:
+        format_sql: true

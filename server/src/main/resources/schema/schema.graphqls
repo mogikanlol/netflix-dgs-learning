@@ -1,0 +1,22 @@
+scalar Date
+
+type Query {
+    user(id: ID!): User
+}
+
+type User {
+    id: ID
+    name: String
+    posts: [Post]
+    followers(last: Int): [Follower]
+}
+
+type Post {
+    title: String
+    post_date: Date
+}
+
+type Follower {
+    name: String
+    follow_date: Date
+}

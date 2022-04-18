@@ -1,0 +1,35 @@
+
+
+
+query {
+  user (id: "440f122a-544f-458b-9061-c026f8a92840"){
+    name
+    posts  {
+      title
+      post_date
+    }
+    followers (last: 5) {
+      name
+    }
+  }
+}
+
+
+
+# query {
+#   shows {
+#     title
+#     releaseYear
+#   }
+# }
+
+
+
+
+
+# {
+#   shows(titleFilter: "Ozark") {
+#     title
+#     releaseYear
+#   }
+# }
